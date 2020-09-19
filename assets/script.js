@@ -1,18 +1,13 @@
 $(document).ready(function () {
     var time = (moment().format("H"))
-
     //---------------------------------------------------------------------------------------
     // Use this to dummy test the time code
     //---------------------------------------------------------------------------------------
     // var time = "16"     
-
-
     console.log(time)
-
     //---------------------------------------------------------------------------------------
     // 9am
     //---------------------------------------------------------------------------------------
-
     function colourRow9() {
         if (time == "9") {
             $("#nineAmRow").addClass("present")
@@ -31,11 +26,9 @@ $(document).ready(function () {
         localStorage.setItem("text9", saveTextContent9.innerHTML)
     })
     document.querySelector("#textContent9").innerHTML = saved9
-
     //---------------------------------------------------------------------------------------
     // 10am
     //---------------------------------------------------------------------------------------
-
     function colourRow10() {
         if (time == "10") {
             $("#tenAmRow").addClass("present")
@@ -57,13 +50,9 @@ $(document).ready(function () {
         localStorage.setItem("text10", saveTextContent10.innerHTML)
     })
     document.querySelector("#textContent10").innerHTML = saved10
-
     //---------------------------------------------------------------------------------------
     // 11am
     //---------------------------------------------------------------------------------------
-
-
-
     function colourRow11() {
         if (time == "11") {
             $("#elevenAmRow").addClass("present")
@@ -77,7 +66,6 @@ $(document).ready(function () {
         }
     }
     colourRow11()
-
     //---------------------------------------------------------------------------------------
     // 11am Save text field
     //---------------------------------------------------------------------------------------
@@ -87,13 +75,9 @@ $(document).ready(function () {
         localStorage.setItem("text11", saveTextContent11.innerHTML)
     })
     document.querySelector("#textContent11").innerHTML = saved11
-
     //---------------------------------------------------------------------------------------
     // 12pm
     //---------------------------------------------------------------------------------------
-
-
-
     function colourRow12() {
         if (time == "12") {
             $("#twelvePmRow").addClass("present")
@@ -115,16 +99,13 @@ $(document).ready(function () {
         localStorage.setItem("text12", saveTextContent12.innerHTML)
     })
     document.querySelector("#textContent12").innerHTML = saved12
-
     //---------------------------------------------------------------------------------------
     // 1pm
     //---------------------------------------------------------------------------------------
-
     function colourRow1() {
         if (time == "13") {
             $("#onePmRow").addClass("present")
         }
-
         else if (time == "9" || time == "10" || time == "11" || time == "12") {
             $("#onePmRow").addClass("future")
         }
@@ -142,25 +123,19 @@ $(document).ready(function () {
         localStorage.setItem("text1", saveTextContent1.innerHTML)
     })
     document.querySelector("#textContent1").innerHTML = saved1
-
     //---------------------------------------------------------------------------------------
     // 2pm
     //---------------------------------------------------------------------------------------
-
     function colourRow2() {
         if (time == "14") {
             $("#twoPmRow").addClass("present")
         }
-
         else if (time == "9" || time == "10" || time == "11" || time == "12" || time == "13") {
             $("#twoPmRow").addClass("future")
         }
         else if (time !== "9" || time !== "10" || time !== "11" || time !== "12" || time !== "13") {
             $("#twoPmRow").addClass("past")
         }
-
-
-
     }
     colourRow2()
     //---------------------------------------------------------------------------------------
@@ -172,23 +147,19 @@ $(document).ready(function () {
         localStorage.setItem("text2", saveTextContent2.innerHTML)
     })
     document.querySelector("#textContent2").innerHTML = saved2
-
     //---------------------------------------------------------------------------------------
     // 3pm
     //---------------------------------------------------------------------------------------
-
     function colourRow3() {
         if (time == "15") {
             $("#threePmRow").addClass("present")
         }
-
         else if (time == "9" || time == "10" || time == "11" || time == "12" || time == "13" || time == "14") {
             $("#threePmRow").addClass("future")
         }
         else if (time !== "9" || time !== "10" || time !== "11" || time !== "12" || time !== "13" || time !== "14") {
             $("#threePmRow").addClass("past")
         }
-
     }
     colourRow3()
     //---------------------------------------------------------------------------------------
@@ -200,24 +171,19 @@ $(document).ready(function () {
         localStorage.setItem("text3", saveTextContent3.innerHTML)
     })
     document.querySelector("#textContent3").innerHTML = saved3
-
     //---------------------------------------------------------------------------------------
     // 4pm
     //---------------------------------------------------------------------------------------
-
     function colourRow4() {
         if (time == "16") {
             $("#fourPmRow").addClass("present")
         }
-
         else if (time == "9" || time == "10" || time == "11" || time == "12" || time == "13" || time == "14"|| time == "15") {
             $("#fourPmRow").addClass("future")
         }
         else if (time !== "9" || time !== "10" || time !== "11" || time !== "12" || time !== "13" || time !== "14"|| time !== "15") {
             $("#fourPmRow").addClass("past")
         }
-
-
     }
     colourRow4()
     //---------------------------------------------------------------------------------------
@@ -229,22 +195,19 @@ $(document).ready(function () {
         localStorage.setItem("text4", saveTextContent4.innerHTML)
     })
     document.querySelector("#textContent4").innerHTML = saved4
-
     //---------------------------------------------------------------------------------------
     // 5pm
     //---------------------------------------------------------------------------------------
-
     function colourRow5() {
         if (time == "17") {
             $("#fivePmRow").addClass("present")
         }
-        else if (time == "18" || time == "19") {
-            $("#fivePmRow").addClass("past")
-        }
-        else if (time !== "18" || time !== "19") {
+        else if (time == "9" || time == "10" || time == "11" || time == "12" || time == "13" || time == "14"|| time == "15"|| time == "14") {
             $("#fivePmRow").addClass("future")
         }
-
+        else if (time !== "9" || time !== "10" || time !== "11" || time !== "12" || time !== "13" || time !== "14"|| time !== "15"||time !== "14") {
+            $("#fivePmRow").addClass("past")
+        }
     }
     colourRow5()
     //---------------------------------------------------------------------------------------
@@ -256,13 +219,6 @@ $(document).ready(function () {
         localStorage.setItem("text5", saveTextContent5.innerHTML)
     })
     document.querySelector("#textContent5").innerHTML = saved5
-
-    //---------------------------------------------------------------------------------------
-    // 10am
-    //---------------------------------------------------------------------------------------
-
-
-
 })
 
 
