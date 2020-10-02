@@ -5,4 +5,4 @@ Project Location: https://github.com/Mathew-Harvey/day-planner
 
 Web application deployed here: https://mathew-harvey.github.io/day-planner/
 
-ScreenShot: <img>./assets/screenshot.jpg</img>
+ScreenShot: <img src="/assets/screenshot.jpg">
