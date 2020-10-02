@@ -1,5 +1,12 @@
 $(document).ready(function () {
     var time = (moment().format("H"))
+
+    var currentTime = function () {
+        document.querySelector("#currentTime").innerHTML = moment().format('MMMM Do YYYY, h:mm:ss a');
+    }
+    currentTime();
+    setInterval(currentTime, 1000);
+ 
     //---------------------------------------------------------------------------------------
     // Use this to dummy test the time code
     //---------------------------------------------------------------------------------------
